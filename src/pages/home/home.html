@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  The world is your oyster.
+  <p>
+    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
+  </p>
+  <a href="tel:{{number}}">CALL</a>
+
+  <button ion-button (click)="takePhoto()" full color="primary">Take Photo</button>
+  <button ion-button (click)="getImage()" full color="secondary">Get Photo From Library</button>
+  <button ion-button (click)="cropImage()" full color="danger">Crop Image</button>
+  <button ion-button (click)="uploadImage()" full color="dark">Upload Image</button>
+
+  <p align="center"><img src="{{ myphoto }}"></p>
+</ion-content>
